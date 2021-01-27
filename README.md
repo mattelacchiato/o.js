@@ -52,6 +52,7 @@ const o = require('odata').o;
 // promise example
 o('http://my.url')
   .get('resource')
+  .query({ $top: 3 })
   .then((data) => console.log(data));
 ```
 
